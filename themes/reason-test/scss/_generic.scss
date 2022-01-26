@@ -1,0 +1,44 @@
+html {
+    font-size: 16px;
+    box-sizing: border-box;
+    width: 100vw;
+}
+
+.o-body {
+    position: relative;
+    padding: 1rem 1.25rem;
+    margin: 0;
+
+    /*
+    &.admin-bar {
+        margin-top: 2rem;
+    }*/
+}
+
+.o-body__border {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    border: 1.25rem solid $off-white;
+    box-sizing: border-box;
+    pointer-events: none;
+    z-index: 10;
+}
+
+.o-body.admin-bar .o-body__border {
+    top: 2rem;
+    height: calc(100vh - 2rem);
+}
+
+.o-wrapper {
+    max-width: 75rem;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}

@@ -1,0 +1,14 @@
+.c-header {
+    padding: 1.25rem 0;
+}
+
+.c-header__logo {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+
+    a {
+        color: $dark-text;
+        text-decoration: none;
+    }
+}

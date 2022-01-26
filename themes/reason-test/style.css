@@ -1,0 +1,167 @@
+/*
+Theme Name: Reason Test theme
+Author: Benny Brown
+Description: Reason Tech Test theme
+Version: 1.0.0
+*/
+/**
+ * WordPress Generated Classes
+ * @see http://codex.wordpress.org/CSS#WordPress_Generated_Classes
+ */
+/** Media alignment */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Roboto:wght@300;400;700&display=swap");
+.alignnone {
+  margin-left: 0;
+  margin-right: 0;
+  max-width: 100%;
+  height: auto; }
+
+.aligncenter {
+  display: block;
+  margin: 5px auto;
+  height: auto; }
+
+.alignleft,
+.alignright {
+  margin-bottom: 5px;
+  height: auto; }
+
+@media (min-width: 30rem) {
+  .alignleft {
+    float: left;
+    margin-right: 5px; }
+  .alignright {
+    float: right;
+    margin-left: 5px; } }
+
+/** Captions */
+/** Text meant only for screen readers */
+.screen-reader-text {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+  color: #000;
+  background: #fff; }
+
+/* Colours */
+html {
+  font-family: 'roboto', sans-serif; }
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Montserrat', sans-serif; }
+
+.o-content-block {
+  margin-bottom: 2.25rem; }
+
+html {
+  font-size: 16px;
+  box-sizing: border-box;
+  width: 100vw; }
+
+.o-body {
+  position: relative;
+  padding: 1rem 1.25rem;
+  margin: 0;
+  /*
+    &.admin-bar {
+        margin-top: 2rem;
+    }*/ }
+
+.o-body__border {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  border: 1.25rem solid #e7e7e7;
+  box-sizing: border-box;
+  pointer-events: none;
+  z-index: 10; }
+
+.o-body.admin-bar .o-body__border {
+  top: 2rem;
+  height: calc(100vh - 2rem); }
+
+.o-wrapper {
+  max-width: 75rem;
+  margin: 0 auto;
+  padding: 0 1rem; }
+
+img {
+  max-width: 100%;
+  height: auto; }
+
+.c-header {
+  padding: 1.25rem 0; }
+
+.c-header__logo {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2rem;
+  font-weight: 700; }
+  .c-header__logo a {
+    color: #2b2b2b;
+    text-decoration: none; }
+
+.c-posts-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 25px; }
+  .c-posts-grid .c-posts-grid__post {
+    display: block;
+    position: relative; }
+
+.c-posts-grid__post-link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 1; }
+
+.c-posts-grid__post-media {
+  margin-bottom: 1rem; }
+
+.c-posts-grid__post-heading {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.25rem;
+  margin-bottom: 25px;
+  display: block; }
+
+/* Categories */
+.c-posts__categories {
+  display: block;
+  text-align: right;
+  margin-bottom: 1.25rem; }
+  .c-posts__categories ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end; }
+  .c-posts__categories a {
+    display: block;
+    margin-left: 1.25rem;
+    color: #2b2b2b;
+    text-decoration: none; }
+
+/* Blog Single */
+.c-single__wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 50px; }
+
+body.single-post:after {
+  content: "";
+  position: absolute;
+  width: 50%;
+  top: 0;
+  right: 0;
+  height: 100%;
+  z-index: -1;
+  background: #e7e7e7; }
+
+.c-single__content {
+  background: #fff; }
